@@ -21,6 +21,25 @@
 # Write your functions below:
 # Body
 
+def check_fermat(a,b,c,n):
+	cal1=(a**n)+(b**n)
+	cal2=(c**n)
+	if (n>2 and cal1==cal2):
+		print("Holy smokes, Fermat was wrong!")
+	else:
+		print("No, that doesn't work.")
+	
+def check_fermat_ints():
+	a1=input("enter a:  ")
+	b1=input("enter b:  ")
+	c1=input("enter c:  ")
+	n1=input("enter n:  ")
+	a=int(a1)
+	b=int(b1)
+	c=int(c1)
+	n=int(n1)
+	check_fermat(a,b,c,n)
+	
 
 
 
@@ -32,14 +51,16 @@
 # Write your functions above:
 ################################################################################
 def main():
-    """Call your function within this function.
-    When complete have one function call in this function:
-    check_fermat_ints(1,2,3,4)
-    and two functions defined in the body:
-    check_fermat_ints()
-    check_fermat()
-    """
-    print("Hello World!")
+#Call your function within this function.
+#    When complete have one function call in this function:
+#    check_fermat_ints(1,2,3,4)
+#    and two functions defined in the body:
+#    check_fermat_ints()
+#    check_fermat()***
+	
+	print("Hello World!")
+	check_fermat(1,2,3,4)
+	check_fermat_ints()
 
 
 

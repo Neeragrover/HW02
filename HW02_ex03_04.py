@@ -28,23 +28,52 @@
 ################################################################################
 # Write your functions below:
 # Body
+#>>> def do_twice(f):
+#...     f()
+#...     f()
+#...
+# def print_spam():
+#	print 'spam'
 
+#>>> do_twice(print_spam)***
+#spam
+#spam
 
+def do_twice(f,v):
+	f(v)
+	f(v)
 
+def test(v):
+	print v
 
+def print_twice(string1):
+	print string1
+	print string1
 
+def mod_do_twice(f,s):
+	f(s)
+	f(s)
 
+def do_four(f,s):
+	for i in range(0,4):
+		f(s)
+	
 
 # Write your functions above:
 ################################################################################
 def main():
-    """Call your functions within this function.
-    When complete have one function call in this function:
-    do_four([function object], [some_value])
-    """
-    print("Hello World!")
-    
-
+   """Call your functions within this function.
+   When complete have one function call in this function:
+   do_four([function object], [some_value])
+   """
+   print("Hello World!")
+   do_twice(test,5)
+   print_twice("hello")
+   mod_do_twice(print_twice,'spam')
+   do_four(print_twice,'printfour')
+   
+	
+	
 
 if __name__ == "__main__":
     main()

@@ -23,10 +23,30 @@
 # Write your functions below:
 # Body
 
+def is_triangle_2(s1,s2,s3):
+	if ((s1>s2+s3) or (s2>s1+s3) or (s3>s1+s2)):
+		print("No")
+	elif ((s1==s2+s3) or (s2==s1+s3) or (s3==s1+s2)):
+		print("Degenerate")
+	else:
+		print("Yes")
 
-
-
-
+def is_triangle(s1,s2,s3):
+	if ((s1<s2+s3) and (s2<s1+s3) and(s3<s1+s2)):
+		print("Yes")
+	elif ((s1==s2+s3) or (s2==s1+s3) or (s3==s1+s2)):
+		print("Degenerate")
+	else:
+		print("No")
+		
+def is_triangle_mod():
+	s11=input("enter first side:")
+	s22=input("enter second side:")
+	s33=input("enter third side:")
+	s1=int(s11)
+	s2=int(s22)
+	s3=int(s33)
+	is_triangle_2(s1,s2,s3)
 
 
 
@@ -34,17 +54,19 @@
 # Write your functions above:
 ################################################################################
 def main():
-    """Call your functions within this function.
-    When complete have four function calls in this function
-    for is_triangle (we want to test the edge cases!):
-    is_triangle(1,2,3)
-    is_triangle(1,2,4)
-    is_triangle(1,5,3)
-    is_triangle(6,2,3)
-    and a function call for
-    check_stick_lengths()
-    """
-    print("Hello World!")
+#    """Call your functions within this function.
+#    When complete have four function calls in this function
+#    for is_triangle (we want to test the edge cases!):
+#    is_triangle(1,2,3)
+#    is_triangle(1,2,4)
+#    is_triangle(1,5,3)
+#    is_triangle(6,2,3)
+#    and a function call for
+#    check_stick_lengths()
+#    """p
+	print("Hello World!")
+	is_triangle(6,2,3)
+	is_triangle_mod()
 
 
 

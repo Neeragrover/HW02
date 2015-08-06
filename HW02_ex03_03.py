@@ -16,18 +16,22 @@
 # Body
 
 
-
-
-
-
-
-# Write your function above:
+def right_justify(str):
+#	print(str)
+	length=len(str)
+	num_spaces=70-length
+	space=" "
+	space_append=num_spaces*space
+	final=space_append+str
+	print final
+	
+ # Write your function above:
 ################################################################################
 def main():
     """Call your functions within this function."""
     print("Hello World!")
     right_justify("Python")
-    right_justify("YOUR_NAME")
+    right_justify("Neera Grover")
 
 if __name__ == "__main__":
     main()
