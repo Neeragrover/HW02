@@ -23,13 +23,13 @@
 # Write your functions below:
 # Body
 
-def is_triangle_2(s1,s2,s3):
+""""def is_triangle_2(s1,s2,s3):
 	if ((s1>s2+s3) or (s2>s1+s3) or (s3>s1+s2)):
 		print("No")
 	elif ((s1==s2+s3) or (s2==s1+s3) or (s3==s1+s2)):
 		print("Degenerate")
 	else:
-		print("Yes")
+		print("Yes")"""
 
 def is_triangle(s1,s2,s3):
 	if ((s1<s2+s3) and (s2<s1+s3) and(s3<s1+s2)):
@@ -46,7 +46,7 @@ def is_triangle_mod():
 	s1=int(s11)
 	s2=int(s22)
 	s3=int(s33)
-	is_triangle_2(s1,s2,s3)
+	is_triangle(s1,s2,s3)
 
 
 
